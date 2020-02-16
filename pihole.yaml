@@ -10,7 +10,7 @@ metadata:
   name: pihole-configmap
   namespace: pihole-dns
 data:
-  health.sh: "#!/bin/bash\n\ntest=$(dig +short pi-hole.net|grep
+  health.sh: "#!/bin/bash\n\ntest=$(dig @$PIHOLE_SERVICE_DNS_PORT_53_UDP_ADDR +short pi-hole.net|grep
     -E -o '([0-9]{1,3}[\\.]){3}[0-9]{1,3}'|wc -l)\n\nif [[ $test -eq \"1\" ]]\nthen
     \n    exit 0\nelse\n    exit 1\nfi\n"
 
