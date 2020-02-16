@@ -97,6 +97,13 @@ spec:
            successThreshold: 1
            timeoutSeconds: 5
         name: pihole
+        env:
+        - name: DNS1
+          value: "1.1.1.1"
+        - name: DNS2
+          value: "1.0.0.1"
+        - name: TZ
+          value: "America/Chicago" 
         volumeMounts:
         - mountPath: /etc/pihole
           name: etcpihole 
