@@ -110,8 +110,6 @@ spec:
           name: port80
         - containerPort: 53
           name: port53
-        - containerPort: 443
-          name: port443
         readinessProbe:
            failureThreshold: 3
            httpGet:
