@@ -1,4 +1,4 @@
-# pihole-cluster
+# pihole on kubernetes
 
 The pihole.yaml manifest used for deploying pihole DNS on your kubernetes cluster as application. The manifest has a dependency on ingress-controllers for pihole dashboard. The dns is avaiable on nodePort: 31553
 
