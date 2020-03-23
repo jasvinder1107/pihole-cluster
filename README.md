@@ -15,7 +15,7 @@ NAME                    DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NOD
 daemonset.apps/pihole   1         1         1       1            1           <none>          14m
 root@bladerunner:~#
 ```
-The yamls are tested in below kubernetes version-:
+The yamls are tested in below kubernetes version:
 
 ```
 root@bladerunner:~# kubectl version
