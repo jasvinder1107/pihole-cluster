@@ -99,9 +99,9 @@ spec:
         name: pihole
         env:
         - name: DNS1
-          value: "1.1.1.1@853"
+          value: "1.1.1.1#853"
         - name: DNS2
-          value: "1.0.0.1@853"
+          value: "1.0.0.1#853"
         - name: TZ
           value: "America/Chicago" 
         volumeMounts:
