@@ -30,7 +30,7 @@ spec:
     targetPort: 80
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1 
 kind: Ingress
 metadata:
    name: pihole-ingress-dashboard
@@ -40,9 +40,12 @@ spec:
   - http:
      paths:
      - path: /admin
+       pathType: Prefix
        backend:
-         serviceName: pihole-service-dashboard
-         servicePort: 80
+         service:
+           name: pihole-service-dashboard
+           port:
+              number: 80 
 
 ---
 kind: Service
@@ -99,7 +102,7 @@ spec:
         name: pihole
         env:
         - name: DNS1
-          value: "1.1.1.1#853"
+          value: "192.168.100.248#5533"
         - name: DNS2
           value: "1.0.0.1#853"
         - name: TZ
