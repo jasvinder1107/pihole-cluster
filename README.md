@@ -23,4 +23,4 @@ Client Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.2", GitCom
 Server Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.2", GitCommit:"59603c6e503c87169aea6106f57b9f242f64df89", GitTreeState:"clean", BuildDate:"2020-01-18T23:22:30Z", GoVersion:"go1.13.5", Compiler:"gc", Platform:"linux/amd64"}
 root@bladerunner:~#
 ```
-As of now the deamonset is using default service account.
+As of now the deamonset is using default service account..
